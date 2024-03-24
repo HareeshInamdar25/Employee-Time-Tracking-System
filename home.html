@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Time Tracking System</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family:Georgia, 'Times New Roman', Times, serif, sans-serif}
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size:cover;
+      background-image: url("images/7.jpg");
+      min-height: 100%; 
+    }
+    .css1{
+    background-color: #e1ebfa;
+    }
+    .css4{
+      border-radius: 25px;
+    }
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+</style>
+</head>
+
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-greyscale w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-dark-grey">Employee Time Tracking System</a>
+        <div class="w3-right w3-hide-small">
+          <a href="#about"  class="w3-bar-item w3-button">ABOUT</a>
+          <a href="http://localhost/dbms_final/login/login.php" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGIN</a>
+          <a onclick="message()" class="w3-bar-item w3-button"><i class="fa fa-th"></i> RETRIEVE EMPLOYEE DETAILS</a>
+          <a onclick="message()" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> TASK DETAILS</a>
+          <a onclick="message()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> LEAVE STATUS</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-black" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small ">Employee Time Tracking System</span><br>
+        <span class="w3-large">One stop solution for efficient and relaible management system.</span>
+        <p><a href="#about" class="w3-button w3-dark-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about the project</a></p>
+      </div> 
+    </header>
+
+    <!-- About Section -->
+    <div class="css1" style="padding:168px 16px" id="about">
+      <h3 class="w3-center">ABOUT THE PROJECT</h3>
+      <p class="w3-center w3-large">Key features of our project</p>
+      <div class="w3-row-padding w3-center" style="margin-top:64px" >
+        <div class="w3-half">
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+          <p class="w3-large">Responsive</p>
+          <p>easily maintain employee records.</p>
+        </div>
+        <div class="w3-half">
+          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">Support</p>
+          <p>write description of our project here.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    </footer>
+    
+    <script>
+      function message(){alert("please login first");}
+    </script>
+
+</body>
+</html>
